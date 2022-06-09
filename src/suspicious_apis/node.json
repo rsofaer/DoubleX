@@ -1,0 +1,83 @@
+{
+	"_description": "APIs for using DoubleX with NodeJS.",
+	"cs": {
+		"direct_dangers": {
+			"execution": [
+				"module.evaluate",
+				"eval",
+				"WebAssembly.instantiate",
+				"WebAssembly.instantiateStreaming",
+				"WebAssembly.compile",
+				"WebAssembly.compileStreaming",
+				"cluster.fork",
+				"script.runInContext",
+				"script.runInNewContext",
+				"script.runInThisContext",
+				"vm.runInContext",
+				"vm.runInNewContext",
+				"vm.runInThisContext",
+				"child_process.exec",
+				"child_process.execFile",
+				"child_process.fork",
+				"child_process.spawn",
+				"child_process.execFileSync",
+				"child_process.execSync",
+				"child_process.spawnSync"
+			],
+			"filesystem": [
+				"fs.readFile",
+				"fs.readFileSync",
+				"fs.read",
+				"fs.readdir",
+				"fs.readdirSync",
+				"fs.readSync",
+				"filehandle.read",
+				"filehandle.readFile",
+				"fsPromises.readdir",
+				"fsPromises.readFile",
+				"fs.createReadStream",
+				"fs.copyFile",
+				"fs.copyFileSync"
+			],
+			"network": [
+				"https.request",
+				"https.get",
+				"http.request",
+				"socket.write",
+				"socket.send",
+				"socket.connect",
+				"request.write",
+				"response.write",
+				"http2stream.pushStream",
+				"response.write",
+				"process.dlopen",
+				"session.post",
+				"http.get"
+			],
+			"input": [
+				"Base64.decode",
+				"Buffer.from",
+				"Buffer"
+			],
+			"crypto": [
+				"ecdh.getPrivateKey",
+				"diffieHellman.getPrivateKey"
+			],
+			"other": [
+				"server.getTicketKeys",
+				"worker.send",
+				"subprocess.send",
+				"Reflect",
+				"Proxy",
+				"inspector.open"
+			]
+		},
+		"indirect_dangers": {},
+		"exfiltration_dangers": {}
+	},
+	"bp": {
+		"direct_dangers": {},
+		"indirect_dangers": {},
+		"exfiltration_dangers": {}
+	}
+}
